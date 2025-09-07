@@ -7,7 +7,7 @@ vim.o.swapfile = false
 vim.g.mapleader = " "
 
 -- (plugins)
-require('plugins.nvim')
+require('plugins.lspconfig')
 require('plugins.neo-tree')
 require('plugins.dashboard')
 require('plugins.twilight')
