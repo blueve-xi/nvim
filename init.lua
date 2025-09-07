@@ -21,6 +21,6 @@ require('plugins.lualine')
 require('plugins.lazygit')
 require('plugins.notify')
 -- require configs
-require('config.autocmd')
+require('config.dashboard-nvim')
 require('config.keybinds')
 
