@@ -18,6 +18,7 @@ require('plugins.mini')
 require('plugins.nvim-tree')
 require('plugins.neovim-sm')
 require('plugins.lualine')
+require('plugins.lazygit')
 require('plugins.notify')
 -- require configs
 require('config.autocmd')
