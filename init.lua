@@ -14,5 +14,5 @@ require('plugins.lazygit')
 require('plugins.notify')
 -- require configs
 require('config.dashboard-nvim')
-require('config.keybinds')
+require('config.keymap')
 require('config.options')
