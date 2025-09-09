@@ -225,4 +225,7 @@ require('render-markdown').setup({
         quote     = { raw = '[!QUOTE]',     rendered = '󱆨 Quote',     highlight = 'RenderMarkdownQuote',   category = 'obsidian' },
         cite      = { raw = '[!CITE]',      rendered = '󱆨 Cite',      highlight = 'RenderMarkdownQuote',   category = 'obsidian' },
     },
+  opts = {
+render_modes = { 'n', 'c', 't', 'i' }
+		},
 })

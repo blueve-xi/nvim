@@ -3,10 +3,21 @@ vim.pack.add({
 })
 
 require("notify").setup({
-		timeout = 5000,
+  stages = "fade_in_slide_out", -- Optional: Animation style
+  timeout = 2000, -- Duration notifications stay visible (in milliseconds)
+  window = {
+    config = function()
+      local has_statusline = vim.o.laststatus > 0
+      local bottom_space = vim.o.cmdheight + (has_statusline and 1 or 0)
+      return {
+        anchor = "NE", -- Northeast corner (top-right)
+        col = vim.o.columns, -- Align to the right edge
+        row = 1, -- Small offset from the top
+      }
+    end,
+  },
 })
 
- vim.notify = require("notify")
 vim.opt.termguicolors = true
 
 
