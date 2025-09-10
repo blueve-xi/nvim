@@ -4,7 +4,7 @@ vim.pack.add({
 
 --Neo-Treesitter setup
 require('nvim-treesitter.configs').setup {
-  -- Ensure that the parsers for your desired languages are installed.
+  build = ":TSUpdate",
   ensure_installed = { "c", "ruby", "vim", "rust", "javascript", "html", "python" },
   
   -- Automatically install missing parsers when you open a file of that type.

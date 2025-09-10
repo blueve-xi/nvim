@@ -1,6 +1,6 @@
 vim.pack.add({
-{ src = "https://github.com/bngarren/checkmate.nvim.git"},
-		{ src = "https://github.com/MeanderingProgrammer/render-markdown.nvim.git"},
+	{ src = "https://github.com/bngarren/checkmate.nvim.git"},
+	{ src = "https://github.com/MeanderingProgrammer/render-markdown.nvim.git"},
 })
 
 require("checkmate").setup({
@@ -12,7 +12,7 @@ require("checkmate").setup({
 		},
 })
 
--- opts.metadata
+--opts.metadata
 status = {
   choices = { "backlog", "in-progress", "blocked", "review", "done" },
   key = "<leader>Ts"
@@ -20,7 +20,11 @@ status = {
 
 -- render markdown
 require('render-markdown').setup({
-    completions = { lsp = { enabled = true } },
+  checkbox = {
+    enabled = false,
+    completions = { lsp = { enabled = true } 
+    },
+  },
 })
 require('render-markdown').setup({
     link = {
@@ -225,7 +229,10 @@ require('render-markdown').setup({
         quote     = { raw = '[!QUOTE]',     rendered = '󱆨 Quote',     highlight = 'RenderMarkdownQuote',   category = 'obsidian' },
         cite      = { raw = '[!CITE]',      rendered = '󱆨 Cite',      highlight = 'RenderMarkdownQuote',   category = 'obsidian' },
     },
-  opts = {
-render_modes = { 'n', 'c', 't', 'i' }
-		},
+require("render-markdown").setup({
+    borders = "solid",
+    heading = {
+        sign = true,
+    },
+})
 })
