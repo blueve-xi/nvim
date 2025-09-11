@@ -10,10 +10,12 @@ require('plugins.mini')
 require('plugins.neovim-sm')
 require('plugins.lualine')
 require('plugins.lazygit')
-require('plugins.notify')
 require('plugins.fuzzy')
 
 -- require configs
 require('config.dashboard-nvim')
 require('config.keymap')
 require('config.options')
+
+
+

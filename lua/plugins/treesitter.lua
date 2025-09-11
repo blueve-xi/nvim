@@ -5,7 +5,8 @@ vim.pack.add({
 --Neo-Treesitter setup
 require('nvim-treesitter.configs').setup {
   build = ":TSUpdate",
-  ensure_installed = { "c", "ruby", "vim", "rust", "javascript", "html", "python" },
+  ensure_installed = { "lua", "vim", "html", "python", "java", "javascript", "typescript", "c_sharp", "bash",
+   "haskell", "ruby", "swift" },
   
   -- Automatically install missing parsers when you open a file of that type.
   auto_install = true,
@@ -14,7 +15,7 @@ require('nvim-treesitter.configs').setup {
   highlight = {
     enable = true,
     -- You can add languages to disable treesitter highlighting for here.
-    disable = { "c", "rust" },
+    disable = { },
     -- Alternatively, you can enable additional regex-based highlighting.
     -- This may be useful if a language is not fully supported by treesitter.
     additional_vim_regex_highlighting = false,
@@ -23,7 +24,6 @@ require('nvim-treesitter.configs').setup {
   -- Enable indentation based on treesitter.
   indent = {
     enable = true,
-    disable = { "python" }
   },
 }
 

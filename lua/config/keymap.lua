@@ -1,4 +1,5 @@
 --System keymaps
+vim.g.my_plugin_setting = true
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 vim.g.loaded_ruby_provider = 0
@@ -26,9 +27,6 @@ vim.keymap.set('n', '<leader>lg', ':LazyGit<CR>')
 vim.keymap.set('n', '<leader>fs', ':FzfLua files<CR>')
 vim.keymap.set('n', '<leader>fb', ':FzfLua buffers<CR>')
 
-
 --Misc. 
 vim.keymap.set('n', '<leader>t', ':Themify<CR>')
-vim.keymap.set('n', '<C-t>', ':Twilight<CR>')
-vim.keymap.set('n', '<leader>nd', require("notify").dismiss)
---vim.keymap.set{ "<leader>", mode = { "n", "v" }
+vim.keymap.set('n', '<leader>T', ':Twilight<CR>')
