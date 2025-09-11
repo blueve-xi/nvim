@@ -11,7 +11,7 @@ require('plugins.neovim-sm')
 require('plugins.lualine')
 require('plugins.lazygit')
 require('plugins.fuzzy')
-
+require('plugins.autotag')
 -- require configs
 require('config.dashboard-nvim')
 require('config.keymap')
