@@ -12,8 +12,8 @@ vim.keymap.set('n', '<leader>q', ':quit<CR>')
 
 
 --Modes
-vim.keymap.set('x', '<C-i>', '<ESC>I') -- swap from visual into instert mode
-vim.keymap.set('i', '<C-v>', '<ESC>V') -- swap from visual into instert mode
+vim.keymap.set('x', '<C-i>', '<ESC>I') -- swap from visual into insert mode
+vim.keymap.set('i', '<C-v>', '<ESC>V') -- swap from visual into insert mode
 
 --Plugin Keymaps
 -- NvimTree
