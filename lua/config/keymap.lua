@@ -2,9 +2,7 @@
 vim.g.my_plugin_setting = true
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
-vim.g.loaded_ruby_provider = 0
 vim.g.loaded_perl_provider = 0
-vim.g.loaded_python3_provider = 0
 
 vim.keymap.set('n', '<leader>o', ':update<CR> :source<CR>')
 vim.keymap.set('n', '<leader>w', ':write<CR>')
@@ -30,3 +28,4 @@ vim.keymap.set('n', '<leader>fb', ':FzfLua buffers<CR>')
 --Misc. 
 vim.keymap.set('n', '<leader>t', ':Themify<CR>')
 vim.keymap.set('n', '<leader>T', ':Twilight<CR>')
+
