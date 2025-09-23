@@ -12,12 +12,13 @@ require('plugins.lualine')
 require('plugins.lazygit')
 require('plugins.fuzzy')
 require('plugins.autotag')
-require('plugins.hardtime')
+require('plugins.live')
+require('plugins.which-key')
 -- require configs
 require('config.dashboard-nvim')
 require('config.keymap')
 require('config.options')
-
+require('config.autocmd')
 -- html
 -- Basic capabilities for snippet support (Emmet expansions)
 local capabilities = vim.lsp.protocol.make_client_capabilities()
