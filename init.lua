@@ -15,7 +15,6 @@ require('plugins.autotag')
 require('plugins.live')
 require('plugins.which-key')
 -- require configs
-require('config.dashboard-nvim')
 require('config.keymap')
 require('config.options')
 require('config.autocmd')
